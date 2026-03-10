@@ -144,7 +144,7 @@ behavior: "smooth"
 const projetos = {
 
 portao:[
-"img/banner1.jpg",
+"img/banner1.png",
 "img/banner2.jpg",
 "img/banner3.jpg"
 ],
