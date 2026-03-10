@@ -23,7 +23,7 @@ align-items:center;
 }
 
 .logo{
-width:80px;
+width:50px;
 height:auto;
 }
 
@@ -53,6 +53,7 @@ justify-content:space-between;
 align-items:center;
 padding:20px 0;
 }
+
 
 
 #menu nav a{
