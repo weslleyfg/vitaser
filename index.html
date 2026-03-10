@@ -1,0 +1,317 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Serralheria Profissional BH</title>
+
+<meta name="description" content="Serralheria em Belo Horizonte especializada em portões, corrimões, escadas metálicas e estruturas metálicas.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Serralheria Profissional BH">
+<meta name="geo.region" content="BR-MG">
+<meta name="geo.placename" content="Belo Horizonte">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<header id="menu">
+
+<div class="container menu-container">
+
+<div class="logo">Vitaser
+<img src="img/anner4.jpg">
+<p>Engenharia e serviços</p>
+
+</div>
+
+<nav>
+
+<a href="#servicos">Serviços</a>
+<a href="#galeria">Projetos</a>
+<a href="#clientes">Clientes</a>
+<a href="#contato">Contato</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="container hero-content reveal">
+
+<h1>Serralheria Profissional em Belo Horizonte</h1>
+
+<p>Portões, corrimões, escadas e estruturas metálicas sob medida</p>
+
+<a href="#contato" class="btn">Solicitar orçamento</a>
+
+</div>
+
+</section>
+
+
+<!-- CONTADOR -->
+
+<section class="contador">
+
+<div class="container contador-grid">
+
+<div class="contador-item reveal">
+<h2 class="numero" data-numero="5">0</h2>
+<p>Anos de experiência</p>
+</div>
+
+<div class="contador-item reveal">
+<h2 class="numero" data-numero="500">3</h2>
+<p>Projetos realizados</p>
+</div>
+
+<div class="contador-item reveal">
+<h2 class="numero" data-numero="245">0</h2>
+<p>Clientes satisfeitos</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVIÇOS -->
+
+<section id="servicos" class="servicos">
+
+<div class="container">
+
+<h2 class="reveal">Nossos Serviços</h2>
+
+<div class="grid">
+
+<div class="card reveal">
+<h3>Portões</h3>
+<p>Basculantes, deslizantes e automáticos.</p>
+</div>
+
+<div class="card reveal">
+<h3>Corrimões</h3>
+<p>Corrimões modernos para escadas.</p>
+</div>
+
+<div class="card reveal">
+<h3>Escadas Metálicas</h3>
+<p>Escadas resistentes e modernas.</p>
+</div>
+
+<div class="card reveal">
+<h3>Estruturas Metálicas</h3>
+<p>Coberturas, galpões e estruturas industriais.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALERIA / PROJETOS -->
+
+<section id="galeria" class="galeria">
+
+<div class="container">
+
+<h2 class="reveal">Porjetos Realizados</h2>
+
+<div class="carousel-container reveal">
+
+<button class="nav prev" onclick="scrollGaleria(-1)">❮</button>
+
+<div class="carousel" id="carousel">
+
+<div class="projeto" onclick="abrirProjeto('portao')">
+<img src="img/banner1.jpg" alt="Portão automático" loading="lazy">
+<h3>Ancheta</h3>
+<p>Coberturas, galpões e estruturas industriais.</p>
+</div>
+
+<div class="projeto" onclick="abrirProjeto('corrimao')">
+<img src="img/banner2.jpg" alt="Corrimão metálico" loading="lazy">
+<h3>Savassi</h3>
+<p>Coberturas, galpões e estruturas industriais.</p>
+</div>
+
+<div class="projeto" onclick="abrirProjeto('escada')">
+<img src="img/banner3.jpg" alt="Escada metálica" loading="lazy">
+<h3>Nova lima</h3>
+<p>Coberturas, galpões e estruturas industriais.</p>
+</div>
+
+<div class="projeto" onclick="abrirProjeto('estrutura')">
+<img src="img/banner4.jpg" alt="Estrutura metálica" loading="lazy">
+<h3>Buritis</h3>
+<p>Coberturas, galpões e estruturas industriais.</p>
+</div>
+
+<div class="projeto" onclick="abrirProjeto('portao')">
+<img src="img/banner1.jpg" alt="Portão basculante" loading="lazy">
+<h3>Belo Horizonte</h3>
+<p>Coberturas, galpões e estruturas industriais.</p>
+</div>
+
+<div class="projeto" onclick="abrirProjeto('corrimao')">
+<img src="img/banner2.jpg" alt="Corrimão de vidro" loading="lazy">
+<h3>Belvedere</h3>
+<p>Coberturas, galpões e estruturas industriais.</p>
+</div>
+
+</div>
+
+<button class="nav next" onclick="scrollGaleria(1)">❯</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CLIENTES -->
+
+<section id="clientes" class="clientes">
+
+<div class="container">
+
+<h2 class="reveal">Clientes Satisfeitos</h2>
+
+<div class="grid">
+
+<div class="card reveal">
+<p>Serviço excelente e entrega rápida.</p>
+<strong>João Silva</strong>
+</div>
+
+<div class="card reveal">
+<p>Portão automático perfeito.</p>
+<strong>Maria Souza</strong>
+</div>
+
+<div class="card reveal">
+<p>Escada metálica muito bem feita.</p>
+<strong>Carlos Andrade</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTATO -->
+
+<section id="contato" class="contato">
+
+<div class="container">
+
+<h2 class="reveal">Solicitar Orçamento</h2>
+
+<form id="formOrcamento" class="reveal">
+
+<input type="text" id="nome" placeholder="Seu nome" required>
+
+<input type="tel" id="telefone" placeholder="Telefone" required>
+
+<textarea id="mensagem" placeholder="Descreva seu projeto"></textarea>
+
+<button type="submit" class="btn">Enviar WhatsApp</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- MAPA -->
+
+<section class="mapa">
+
+<div class="container">
+
+<h2 class="reveal">Atendemos Belo Horizonte e Região</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Belo+Horizonte&output=embed"
+width="100%"
+height="300"
+style="border:0;"
+loading="lazy"
+title="Mapa de Belo Horizonte">
+</iframe>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<p>© 2026 Serralheria Profissional BH</p>
+
+</div>
+
+</footer>
+
+
+<!-- BOTÃO WHATSAPP -->
+
+<a href="https://wa.me/5531999999999" class="whatsapp" target="_blank">💬</a>
+
+
+<!-- LIGHTBOX ZOOM IMAGEM -->
+
+<div id="lightbox" class="lightbox">
+<img id="lightboxImg" alt="Imagem ampliada do projeto">
+</div>
+
+
+<!-- GALERIA DO PROJETO -->
+
+<!-- GALERIA PROFISSIONAL -->
+
+<div id="galeriaProjeto" class="galeria-lightbox">
+
+<button class="galeria-fechar" onclick="fecharProjeto()">✕</button>
+
+<button class="galeria-prev" onclick="trocarImagem(-1)">❮</button>
+
+<img id="galeriaImagem">
+
+<button class="galeria-next" onclick="trocarImagem(1)">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```

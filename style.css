@@ -1,0 +1,547 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+
+/* CONTAINER */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+
+/* MENU */
+
+#menu{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.menu-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+#menu nav a{
+color:white;
+-webkit-background-clip:text;
+-webkit-background-clip:text;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+transition:0.3s;
+}
+
+#menu nav a:hover{
+color:#22c55e;
+}
+
+
+/* HERO */
+
+.hero{
+height: 80vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+display: flex;
+align-items: center;
+transition: background-image 1s ease-in-out;
+}
+
+.hero-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+}
+
+.hero h1{
+font-size:48px;
+background:linear-gradient(90deg,#FFD700,#FFC107,#FFEB3B);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+.hero p{
+font-size:18px;
+background:linear-gradient(90deg,#FFD700,#FFC107,#FFEB3B);
+-webkit-background-clip:text;
+}
+
+
+/* BOTÃO */
+
+.btn{
+background:#22c55e;
+padding:14px 28px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+cursor:pointer;
+transition:0.3s;
+border:none;
+}
+
+.btn:hover{
+background:#16a34a;
+}
+
+
+/* CONTADOR */
+
+.contador{
+padding:80px 0;
+}
+
+.contador-grid{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.numero{
+font-size:40px;
+font-weight:bold;
+}
+
+.contador-item p{
+margin-top:10px;
+}
+
+
+/* GRID PADRÃO */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+
+}
+
+
+/* CARDS */
+
+.card{
+
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+
+position:relative;
+overflow:hidden;
+
+transition:all 0.4s ease;
+
+}
+
+.card:hover{
+bottom:10px;
+
+right:5px;
+
+background:linear-gradient(15deg,#25D366,#4ADE80);
+color:white;
+
+font-size:15px;
+
+text-decoration:none;
+
+
+animation:pulse 3s infinite;
+
+
+
+
+}
+
+
+/* SERVIÇOS */
+
+.servicos{
+padding:80px 0;
+
+}
+
+
+/* GALERIA */
+
+.galeria{
+padding:80px 0;
+}
+
+.carousel-container{
+position:relative;
+display:flex;
+align-items:center;
+}
+
+.carousel{
+display:flex;
+gap:20px;
+overflow-x:auto;
+scroll-behavior:smooth;
+padding:20px 10px;
+}
+
+.carousel::-webkit-scrollbar{
+display:none;
+}
+
+
+/* PROJETOS */
+
+.projeto{
+min-width:250px;
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+cursor:pointer;
+transition:0.4s;
+}
+
+.projeto img{
+width:100%;
+height:180px;
+object-fit:cover;
+display:block;
+}
+
+.projeto h3{
+font-size:16px;
+}
+
+.projeto:hover{
+transform:scale(1.08);
+z-index:2;
+}
+
+
+
+/* BOTÕES DO CARROSSEL */
+
+.nav{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,0.6);
+border:none;
+color:white;
+font-size:28px;
+padding:10px 15px;
+cursor:pointer;
+border-radius:6px;
+z-index:10;
+}
+
+.prev{
+left:-10px;
+}
+
+.next{
+right:-10px;
+}
+
+.nav:hover{
+background:#22c55e;
+}
+
+
+/* CLIENTES */
+
+.clientes{
+padding:80px 0;
+background:#020617;
+}
+
+
+/* CONTATO */
+
+.contato{
+padding:80px 0;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border-radius:6px;
+border:none;
+}
+
+textarea{
+min-height:120px;
+resize:none;
+}
+
+
+/* MAPA */
+
+.mapa{
+padding:80px 0;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#020617;
+padding:25px 0;
+margin-top:40px;
+}
+
+
+/* WHATSAPP FLUTUANTE */
+
+
+/* BOTÃO WHATSAPP ANIMADO */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:linear-gradient(135deg,#25D366,#4ADE80);
+
+color:white;
+
+font-size:30px;
+
+padding:15px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+
+animation:pulse 2s infinite;
+
+transition:0.3s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(37,211,102,0.7);
+
+}
+
+70%{
+
+box-shadow:0 0 0 15px rgba(37,211,102,0);
+
+}
+
+100%{
+
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+
+}
+
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:2000;
+}
+
+.lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+}
+
+
+/* GALERIA PROJETO */
+
+.lightbox-content{
+background:#0f172a;
+padding:30px;
+border-radius:10px;
+max-width:900px;
+width:90%;
+}
+
+.fechar{
+cursor:pointer;
+font-size:25px;
+float:right;
+margin-bottom:15px;
+}
+
+#imagensProjeto img{
+width:100%;
+border-radius:10px;
+}
+
+
+/* ANIMAÇÃO AO ROLAR */
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:all 0.8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.contador-grid{
+gap:30px;
+}
+
+.carousel{
+gap:15px;
+}
+
+.projeto{
+min-width:200px;
+}
+
+}
+/* GALERIA PROFISSIONAL */
+
+.galeria-lightbox{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.9);
+
+display:none;
+align-items:center;
+justify-content:center;
+
+z-index:9999;
+
+}
+
+.galeria-lightbox img{
+
+max-width:90%;
+max-height:80%;
+border-radius:10px;
+
+}
+
+.galeria-prev,
+.galeria-next{
+
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+
+background:none;
+border:none;
+
+font-size:40px;
+color:white;
+
+cursor:pointer;
+
+}
+
+.galeria-prev{
+left:30px;
+}
+
+.galeria-next{
+right:30px;
+}
+
+.galeria-fechar{
+
+position:absolute;
+top:20px;
+right:30px;
+
+background:none;
+border:none;
+
+font-size:30px;
+color:white;
+
+cursor:pointer;
+
+}
