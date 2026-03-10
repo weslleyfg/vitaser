@@ -20,12 +20,10 @@ text-align:center;
 display:flex;
 align-items:center;
 gap:10px;
-color:white;
-font-weight:bold;
 }
 
 .logo{
-width:45px;
+width:100px;
 height:auto;
 }
 
