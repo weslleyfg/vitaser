@@ -19,11 +19,11 @@ text-align:center;
 .logo-titulo{
 display:flex;
 align-items:center;
-gap:10px;
+
 }
 
 .logo{
-width:100px;
+width:80px;
 height:auto;
 }
 
@@ -54,10 +54,6 @@ align-items:center;
 padding:20px 0;
 }
 
-.logo{
-font-size:22px;
-font-weight:bold;
-}
 
 #menu nav a{
 color:white;
