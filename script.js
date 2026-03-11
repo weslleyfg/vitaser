@@ -106,7 +106,7 @@ Nome: ${nome}%0A
 Telefone: ${telefone}%0A
 Mensagem: ${mensagem}`;
 
-window.open(`https://wa.me/5531999999999?text=${texto}`);
+window.open(`https://wa.me/5531986985930?text=${texto}`);
 
 });
 
